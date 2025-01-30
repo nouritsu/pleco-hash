@@ -57,6 +57,7 @@ rayon = "1.5.3"
 num_cpus = "1.13.1"
 mucow = "0.1.0"
 lazy_static = "1.4.0"
+strum = { version = "0.26", features = ["derive"] }
 
 [features]
 default = []
