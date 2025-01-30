@@ -17,6 +17,7 @@ use self::bit_twiddles::*;
 use self::bitboard::BitBoard;
 use self::masks::*;
 use self::sq::SQ;
+use strum::VariantArray;
 
 use std::fmt;
 use std::mem;
@@ -299,7 +300,7 @@ impl fmt::Display for PieceType {
 ///
 /// [`Piece`]: ./enum.PieceType
 #[repr(u8)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, VariantArray)]
 pub enum Piece {
     None = 0b0000,
     WhitePawn = 0b0001,
