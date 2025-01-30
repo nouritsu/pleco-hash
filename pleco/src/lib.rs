@@ -78,6 +78,7 @@ extern crate mucow;
 extern crate num_cpus;
 extern crate rand;
 extern crate rayon;
+extern crate strum;
 
 pub mod board;
 pub mod bots;
