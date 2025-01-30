@@ -299,7 +299,7 @@ impl fmt::Display for PieceType {
 ///
 /// [`Piece`]: ./enum.PieceType
 #[repr(u8)]
-#[derive(Copy, Clone, PartialEq, Eq)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash)]
 pub enum Piece {
     None = 0b0000,
     WhitePawn = 0b0001,
